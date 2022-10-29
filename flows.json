@@ -107,6 +107,43 @@
         "color": "#DDAA99"
     },
     {
+        "id": "dc34c98971375e43",
+        "type": "junction",
+        "z": "0d821825fb4f2ecb",
+        "x": 740,
+        "y": 160,
+        "wires": [
+            [
+                "5dd8e6399246dff0"
+            ]
+        ]
+    },
+    {
+        "id": "a59553f778cf1d92",
+        "type": "junction",
+        "z": "0d821825fb4f2ecb",
+        "x": 740,
+        "y": 240,
+        "wires": [
+            [
+                "a66f979f59fa2466"
+            ]
+        ]
+    },
+    {
+        "id": "a6d834561db1d849",
+        "type": "junction",
+        "z": "0d821825fb4f2ecb",
+        "x": 600,
+        "y": 200,
+        "wires": [
+            [
+                "a59553f778cf1d92",
+                "dc34c98971375e43"
+            ]
+        ]
+    },
+    {
         "id": "493f55c3.c6de9c",
         "type": "ui_base",
         "theme": {
@@ -4631,11 +4668,12 @@
         "topic": "BWM_aktive",
         "name": "If ",
         "timeout": 0,
-        "x": 355,
+        "x": 435,
         "y": 360,
         "wires": [
             [
-                "aa8accb4fc1eea4e"
+                "9e2758765ffba120",
+                "a6d834561db1d849"
             ],
             []
         ],
@@ -5264,12 +5302,12 @@
         "offcolor": "",
         "animate": true,
         "className": "",
-        "x": 520,
+        "x": 540,
         "y": 160,
         "wires": [
             [
-                "6aab5e0b9220be21",
-                "800de70ec79fb5ef"
+                "dc34c98971375e43",
+                "a59553f778cf1d92"
             ]
         ]
     },
@@ -5346,11 +5384,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 550,
+        "x": 530,
         "y": 240,
         "wires": [
             [
-                "800de70ec79fb5ef"
+                "a59553f778cf1d92"
             ]
         ]
     },
@@ -5391,22 +5429,6 @@
         "x": 1020,
         "y": 840,
         "wires": []
-    },
-    {
-        "id": "aa8accb4fc1eea4e",
-        "type": "fan",
-        "z": "0d821825fb4f2ecb",
-        "name": "",
-        "x": 425,
-        "y": 340,
-        "wires": [
-            [
-                "9e2758765ffba120",
-                "800de70ec79fb5ef",
-                "6aab5e0b9220be21"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "16aae0d1db122d12",
@@ -5585,7 +5607,7 @@
         "y": 100,
         "wires": [
             [
-                "6aab5e0b9220be21"
+                "dc34c98971375e43"
             ]
         ]
     },
@@ -5666,34 +5688,6 @@
                 "9e2758765ffba120"
             ]
         ]
-    },
-    {
-        "id": "800de70ec79fb5ef",
-        "type": "fan",
-        "z": "0d821825fb4f2ecb",
-        "name": "",
-        "x": 775,
-        "y": 240,
-        "wires": [
-            [
-                "a66f979f59fa2466"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "6aab5e0b9220be21",
-        "type": "fan",
-        "z": "0d821825fb4f2ecb",
-        "name": "",
-        "x": 775,
-        "y": 160,
-        "wires": [
-            [
-                "5dd8e6399246dff0"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "c3f0fd82b74db1c8",
